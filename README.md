@@ -20,12 +20,3 @@ Este proyecto demuestra habilidades en desarrollo Frontend moderno, gestión de 
 * **HTML5:** Estructura semántica.
 * **CSS3 Pro:** Flexbox, Variables (Custom Properties), Animaciones Keyframes y selectores de estado avanzados.
 * **JavaScript (ES6+):** Inyección dinámica de SVGs, lógica de arbitraje y motor de partículas.
-
-## 📁 Estructura del Proyecto
-
-├── assets/
-│   ├── win.mp3      # Efecto de sonido para victoria
-│   └── tie.mp3      # Efecto de sonido para empate
-├── index.html       # Esqueleto y estructura de vistas
-├── style.css        # Motor de diseño y estilos neón
-└── script.js        # Lógica de juego, efectos y audio
