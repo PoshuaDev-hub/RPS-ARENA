@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>NEURAL SHARP | RPS Arena</title>
+    <title>RPS COMBATE | Arena</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Inter:wght@300;600&display=swap" rel="stylesheet">
 </head>
@@ -16,7 +16,7 @@
 
     <div class="app-container">
         <header class="main-header">
-            <h1 class="brand">NEURAL SHARP</h1>
+            <h1 class="brand">RPS COMBATE</h1>
             <h2 id="battle-status">PREPARATE PARA LA BATALLA</h2>
         </header>
 
@@ -25,35 +25,28 @@
                 <div class="core-hub">
                     <div class="core-glow"></div>
                 </div>
-                
                 <button class="weapon-orbit rock" onclick="makeSelection('rock')">
-                    <div class="icon-box" id="svg-rock">
-                        </div>
+                    <div id="svg-rock"></div> 
                 </button>
-
                 <button class="weapon-orbit paper" onclick="makeSelection('paper')">
-                    <div class="icon-box" id="svg-paper">
-                        </div>
+                    <div id="svg-paper"></div>
                 </button>
-
                 <button class="weapon-orbit scissors" onclick="makeSelection('scissors')">
-                    <div class="icon-box" id="svg-scissors">
-                        </div>
+                    <div id="svg-scissors"></div>
                 </button>
             </div>
         </main>
 
         <section id="view-pass" class="view hidden centered-view">
             <div class="transfer-box">
-                <div class="pulse-icon">📲</div>
                 <h2>CAMBIO DE TURNO</h2>
                 <p>Pasa el dispositivo al Rival</p>
-                <button class="btn-glow" onclick="startJ2Turn()">ESTOY LISTO</button>
+                <button class="btn-bottom" onclick="startJ2Turn()">ESTOY LISTO</button>
             </div>
         </section>
 
-        <section id="view-result" class="view hidden centered-view">
-            <div class="arena">
+        <section id="view-result" class="view hidden arena-result">
+            <div class="clash">
                 <div class="player-result" id="res-p1">
                     <small>J1</small>
                     <div class="icon-final" id="icon-p1"></div>
@@ -65,7 +58,7 @@
                 </div>
             </div>
             <h2 id="match-status">ANALIZANDO COMBATE...</h2>
-            <button class="btn-glow" onclick="resetGame()">VOLVER A BATALLAR</button>
+            <button class="btn-bottom" onclick="resetGame()">VOLVER A BATALLAR</button>
         </section>
 
         <footer>
